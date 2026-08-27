@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content = "IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ryan Kemajou's Portfolio</title>
+        <title>Ryan Kemajou | Data Scientist</title>
+        <meta name="description" content="Ryan Kemajou, data scientist and M.S. Data Science candidate at the University of Maryland. NLP research, machine learning, and production health-tech systems.">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/649ae65480.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -18,8 +19,7 @@
                     <li><a href ="#header">Home</a></li>
                     <li><a href ="#about">About</a></li>
                     <li><a href ="#services">Services</a></li>
-                    <li><a href ="#Data-Science-Projects">Data Projects</a></li>
-                    <li><a href ="#cyber-labs">Cyber Labs</a></li>
+                    <li><a href ="#Data-Science-Projects">Projects</a></li>
                     <li><a href ="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
@@ -27,8 +27,8 @@
             </nav>
             <div class="header-text">
                 <h1><span id="typed-text"></span></h1>
-                <p>Hello, I am <span>Ryan Kemajou</span><br> I am from Yaounde, Cameroon</p> 
-                <p>Data Scientist | Cybersecurity Enthusiast | Software Engineer</p>
+                <p>Hello, I am <span>Ryan Kemajou</span></p>
+                <p>Data Scientist | Machine Learning &amp; NLP | M.S. Data Science, University of Maryland</p>
             </div>
         </div>
     </div>
@@ -44,55 +44,49 @@
 
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am a passionate data scientist who thrives on extracting valuable insights from vast datasets. 
-                        My toolkit includes Python, R, SQL, and machine learning libraries. Whether it's optimizing marketing campaigns or predicting customer behavior, 
-                        I love turning data into actionable intelligence.
-                        In addition, I am equally enthusiastic about cybersecurity. 
-                        My mission is to protect organizations from digital threats. 
-                        I secure networks, detect vulnerabilities, and respond swiftly to incidents. 
-                        Firewalls, intrusion detection systems, and risk assessments are my allies. 
-                        I collaborate with incident responders and forensics analysts to fortify our digital fortresses.</p>
+                    <p>I am a data scientist finishing an M.S. in Data Science at the University of Maryland,
+                        with nearly four years of professional experience turning operational data into decisions.
+                        My work sits at the point where machine learning meets something real: I build the models,
+                        but I also build the evaluation that tells you whether they actually worked.</p>
+
+                    <p>Most recently that has meant NLP research: hand-labeling a corpus, training an extractor
+                        that beat the rule-based baseline four times over, and then measuring the human ceiling to
+                        show honestly how much headroom was left. It has also meant shipping production software
+                        through my consultancy: clinical documentation tools, revenue-cycle analytics, and
+                        LLM-backed scoring pipelines that paying users depend on.</p>
 
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('Data Skills')">Data Skills</p>
-                            <p class="tab-links" onclick="opentab('Cybersecurity Skills')">Cybersecurity Skills</p>
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('Experience')">Experience</p>
                             <p class="tab-links" onclick="opentab('Education')">Education</p>
                         </div>
 
-                        <!--Data Skills-->
-                        <div class="tab-contents active-tab" id="Data Skills">
+                        <!--Skills-->
+                        <div class="tab-contents active-tab" id="Skills">
                             <ul>
-                                <li><span><strong>Critical Thinking</strong></span><br>Analytical problem solver with a logical approach to complex challenges.</li>
-                                <li><span><strong>Coding (Python/SQL)</strong></span><br>Proficient in Python and SQL for data manipulation and statistical analysis.</li>
-                                <li><span><strong>Mathematical Skills</strong></span><br>Strong foundation in statistics and probability for trend prediction.</li>
-                                <li><span><strong>Machine Learning</strong></span><br>Experienced in supervised and unsupervised learning techniques.</li>
-                                <li><span><strong>Data Architecture</strong></span><br>Familiar with databases, data warehouses, and cloud platforms.</li>
-                                <li><span><strong>Problem-Solving</strong></span><br>Skilled at identifying patterns and deriving actionable insights.</li>
-                                <li><span><strong>Communication</strong></span><br>Effective communicator, adept at explaining technical concepts to non-technical audiences.</li>
-                            </ul>
-                        </div>
-
-                        <!--Cybersecurity Skills-->
-                        <div class="tab-contents" id="Cybersecurity Skills">
-                            <ul>
-                                <li><span><strong>October 2023</span></strong><br> Comptia Security+ Certified</li>
-                                <li><span><strong>Cybersecurity Practioner</span></strong><br> Labs at Montgomery College</li>
+                                <li><span><strong>Machine Learning</strong></span><br>scikit-learn, PyTorch, XGBoost, logistic regression, random forests, cross-validation, feature engineering.</li>
+                                <li><span><strong>NLP &amp; LLM Systems</strong></span><br>Annotation design, inter-annotator agreement, extraction models, blind evaluation harnesses, Anthropic API, multilingual prompting.</li>
+                                <li><span><strong>Languages</strong></span><br>Python, SQL, R, TypeScript/JavaScript, Java, C++.</li>
+                                <li><span><strong>Data &amp; Infrastructure</strong></span><br>PostgreSQL, pandas, NumPy, Flask, FastAPI, Streamlit, Docker, AWS, Celery/Redis, Tableau, Git.</li>
+                                <li><span><strong>Quantitative</strong></span><br>Time-series analysis, backtesting, Sharpe ratio, drawdown and volatility measurement, optimization, Bayesian methods.</li>
+                                <li><span><strong>Security</strong></span><br>CompTIA Security+ (2023). HIPAA-conscious system design, CSRF and rate-limit hardening, credential isolation.</li>
                             </ul>
                         </div>
 
                         <!--Experience-->
                         <div class="tab-contents" id="Experience">
                             <ul>
-                                <li><span><strong>2021-Present</span></strong><br> Assistant IT Manager - Abundant Grace Health Services, Washington D.C.</li>
+                                <li><span><strong>Jan 2026 &ndash; Present</span></strong><br> Founder &amp; Data/ML Consultant, Ylunga Consulting, Montgomery County, MD</li>
+                                <li><span><strong>Oct 2021 &ndash; Aug 2025</span></strong><br> Data Analyst, Abundant Grace Health Services, Washington, D.C.</li>
                             </ul>
                         </div>
 
                         <!--Education-->
                         <div class="tab-contents" id="Education">
                             <ul>
-                                <li><span><strong>2023-Present</span></strong><br> University of Maryland, College Park - Bachelor of Science</li>
-                                <li><span><strong>2021-2023</span></strong><br> Montgomery College - Assosciates of Arts Degree</li>
+                                <li><span><strong>2025 &ndash; 2026</span></strong><br> University of Maryland, College Park. M.S. Data Science (in progress)</li>
+                                <li><span><strong>2023 &ndash; 2025</span></strong><br> University of Maryland, College Park. B.S. Computer Science, Data Science</li>
+                                <li><span><strong>2021 &ndash; 2023</span></strong><br> Montgomery College. A.A. Computer Science, Honors</li>
                             </ul>
                         </div>
 
@@ -104,27 +98,24 @@
     <!----------------------------Services-------------------------->
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1> 
+            <h1 class="sub-title">What I Do</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    <h2>Consultation</h2>
-                    <p>I consult your enterprise data, bring up insights using them.</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Machine Learning</h2>
+                    <p>I build models that earn their place, trained against a real baseline, validated properly, and reported with their limits stated.</p>
                 </div>
                 <div>
-                    <i class="fa-solid fa-shield"></i>
-                    <h2>Defense</h2>
-                    <p>I analyse your security systems, locating vulnerabilities and potential intrusions</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data &amp; Analytics</h2>
+                    <p>I turn operational data into dashboards and decisions, and automate the reporting that people are still doing by hand.</p>
                 </div>
                 <div>
                     <i class="fa-solid fa-laptop-code"></i>
-                    <h2>Team management</h2>
-                    <p>I Manage your teams</p>
-                    <a href="#">Learn more</a>
+                    <h2>Applied AI Products</h2>
+                    <p>I ship LLM-backed tools end to end: data model, application, deployment, billing, and the security work a regulated field demands.</p>
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
 
@@ -135,72 +126,75 @@
             <div class="project-list">
 
                 <div class="projects">
-                    <img src="images/nba.jpg">
-                    <div class="layer">
-                        <h3>NBA Champion Prediction</h3>
-                        <p>This is a complete data analysis project using historical data to determine the outcome
-                            of the 2024 season.
-                        </p>
-                        <a href="https://github.com/SKULL1313/SKULL1313.github.io" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <div class="projects">
                     <img src="images/NLP.jpg">
                     <div class="layer">
-                        <h3>Medumba NLP</h3>
-                        <p>This is a NLP model using a Cameroonian language "Medumba".</p>
-                        <a href="https://github.com/SKULL1313/Medumba-NLP" target ="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>NLAH-Builder: NLP Research</h3>
+                        <p>Structured intent extraction from plain English. I led data and evaluation:
+                           763 hand-labeled gold values, a trained extractor that lifted micro F1 from
+                           0.05 to 0.20 under leave-one-out cross-validation, and a measured human
+                           ceiling of 0.30 that showed the labels were the real limit.
+                        </p>
+                        <a href="https://github.com/SKULL1313/UMD-DATA641-MSML641" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
 
                 <div class="projects">
-                    <img src="images/feather.jpg">
+                    <img src="images/mental.jpg">
                     <div class="layer">
-                        <h3>Breast Cancer Prediction</h3>
-                        <p>This is a Linear Regresssion project where I predict patients that can have breast cancer</p>
-                        <a href="https://github.com/SKULL1313/Cancer-Prediction" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>Clinical Notes Platform</h3>
+                        <p>AI-assisted clinical documentation for behavioral health providers. Flask and
+                           PostgreSQL, with a server-side LLM proxy so credentials never reach the browser,
+                           CSRF protection, rate limiting, and a 15-minute HIPAA session timeout.
+                        </p>
                     </div>
                 </div>
 
                 <div class="projects">
-                    <img src="images/money.jpg"> 
+                    <img src="images/money.jpg">
                     <div class="layer">
-                        <h3>E-Commerce Analysis</h3>
-                        <p>This is the analysis of an E-Commerce platform</p>
-                        <a href="https://github.com/SKULL1313/Amount-Spent-Prediction" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>Denial Report Builder</h3>
+                        <p>Upload a payer denial spreadsheet, get back a ranked report mapped to a denial
+                           category matrix so billing staff work the highest-recovery denials first.
+                           Auth, subscription billing, and Stripe webhooks included.
+                        </p>
                     </div>
                 </div>
+
+                <div class="projects">
+                    <img src="images/Orange%20B.jpg">
+                    <div class="layer">
+                        <h3>Ylunga Tenders</h3>
+                        <p>A bilingual procurement scout tracking six government sources across two
+                           countries, scoring every opportunity 0–10 with an LLM under separate French and
+                           English prompts, and drafting the response letters.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <img src="images/black.jpg">
+                    <div class="layer">
+                        <h3>Evento: Event Ticketing</h3>
+                        <p>A full-stack ticketing platform built for the Cameroonian market, with Orange
+                           Money and MTN Mobile Money payments through CinetPay. React 19, Express, and
+                           PostgreSQL.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <img src="images/nba.jpg">
+                    <div class="layer">
+                        <h3>Algorithmic Trading Research</h3>
+                        <p>Systematic strategy research on equity and crypto markets: feature engineering
+                           from OHLCV data, gradient-boosted signal models, and a screener scoring
+                           volatility, beta, drawdown, and Sharpe against threshold rules.
+                        </p>
+                    </div>
+                </div>
+
             </div>
             <a href="https://github.com/SKULL1313" target="_blank" class="btn">See more</a>
-        </div>
-    </div>
-
-    <!------------------------------Cyber Security Labs-------------------------------->
-    <div id="cyber-labs">
-        <div class="container">
-            <h1 class="sub-title">Cyber Labs</h1>
-            <div class="lab-list">
-                <!-- Lab 1 -->
-                <div class="lab">
-                    <h3>Lab 1: Network Security Basics</h3>
-                    <video controls>
-                        <source src="videos/network-security-basics.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>This lab covers the basics of network security, including firewall configuration and network monitoring.</p>
-                </div>
-                <!-- Lab 2 -->
-                <div class="lab">
-                    <h3>Lab 2: Intrusion Detection Systems</h3>
-                    <video controls>
-                        <source src="videos/intrusion-detection-systems.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>This lab focuses on setting up and configuring intrusion detection systems to monitor and analyze network traffic for potential threats.</p>
-                </div>
-                <!-- Add more labs as needed -->
-            </div>
         </div>
     </div>
 
@@ -210,10 +204,11 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    
+
                     <p><i class="fa-solid fa-envelope"></i> ryantresor1.k@hotmail.com</p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/ryan-kemajou-1a5642222/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/ryan-kemajou-1a5642222/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/SKULL1313" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
 
                     <a href="documents/Ryan Kemajou Data Scientist.pdf" download class="btn btn2">Download my resume</a>
@@ -270,7 +265,7 @@
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxSIem5d05wy6TYdRs9NTRhlXh3qDBslHCF5k2sYFNZeQSYy-lOUk3q43nf4-VDmJJF_g/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
-    
+
         form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
@@ -288,13 +283,12 @@
     <script>
         document.addEventListener('DOMContentLoaded', function(){
             var options = {
-                /*strings: ["Welcome to my Portfolio.", "I'm Ryan Kemajou.", "Data Scientist.", "Cybersecurity Enthusiast.", "Software Engineer."],*/
                 strings: [
                 "Welcome to my Portfolio.",
                 "I'm Ryan Kemajou.",
                 "Data Scientist.",
-                "Cybersecurity Enthusiast.",
-                "Software Engineer."
+                "Machine Learning Engineer.",
+                "NLP Researcher."
             ],
                 typeSpeed: 50,
                 backSpeed: 25,
